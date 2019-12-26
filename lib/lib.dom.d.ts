@@ -18636,7 +18636,7 @@ interface Window extends EventTarget, AnimationFrameProvider, GlobalEventHandler
     moveTo(x: number, y: number): void;
     msWriteProfilerMark(profilerMarkName: string): void;
     open(url?: string, target?: string, features?: string, replace?: boolean): Window | null;
-    postMessage(message: any, targetOrigin: string, transfer?: Transferable[]): void;
+    postMessage(message: any, targetOrigin?: string, transfer?: Transferable[]): void;
     print(): void;
     prompt(message?: string, _default?: string): string | null;
     /** @deprecated */
